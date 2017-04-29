@@ -1,0 +1,13 @@
+<h2><%= @user.email %>'s Homepage</h2>
+
+<% if @user.plex_token == nil %>
+	<%= form_tag("/users/#{@user.id}/link_plex", method: "post") do %>
+		<%= label_tag(:username, "Plex Username") %>
+		<%= text_field_tag(:username) %><br>
+		<%= label_tag(:password, "Plex Password") %>
+		<%= password_field_tag(:password) %><br>
+		<%= submit_tag("Link Plex") %>
+	<% end %>
+<% else %>
+	<p>Hooray! Your account is linked with Plex!</p>
+<% end %>
