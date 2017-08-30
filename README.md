@@ -1,24 +1,7 @@
-# README
+Plex Reminders aims to aid users of plex with managing new episodes of TV shows.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The end goal is to log into plex and be able to see which shows have new seasons/episodes out.
 
-Things you may want to cover:
+If you have the entirety of a finished show like Seinfeld it will do nothing but if that new episode of Rick and Morty is out it will show that series as incomplete and list any missing episodes.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The plex part of this project shouldn't be too difficult but im unsure of how robust the tv database's API is. I suppose I will find out.
